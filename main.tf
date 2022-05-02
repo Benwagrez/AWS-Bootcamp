@@ -15,6 +15,6 @@ provider "aws" {
 }
 
 module "networking" {
-  source = "./Networking Lab"
+  source = "./Networking"
   region = var.region # Sending parent variable to child module
 }

@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Benwagrez/AWS-200-Bootcamp/">
-    <img src="images/wmlogo.jfif" alt="Logo" width="200" height="80">
+    <img src="Setup/images/wmlogo.jfif" alt="Logo" width="200" height="80">
   </a>
 </div>
 <h1> AWS 200 Bootcamp </h1>
