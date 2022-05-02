@@ -2,11 +2,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/Benwagrez/AWS-200-Bootcamp/blob/main/Bootcamp%20Setup/images/wmlogo.jfif">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 </div>
-# West Monroe AWS 200
+<h1> AWS 200 Bootcamp </h1>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -41,10 +41,10 @@ Before taking this course the following Prerequisites are recommended:
  First, you will have to set up your lab environment, the following installs are required (you may choose your own IDE in place of VS code):
 
 Tools needed:
-* Visual Studio Code
-* Terraform
-* Git or GitHub Desktop
-* AWS CLI
+* <a href="https://code.visualstudio.com/"><strong>Visual Studio Code</strong></a>
+* <a href="https://www.terraform.io/downloads"><strong>Terraform</strong></a> * follow Appendix A for a guide
+* <a href="https://git-scm.com/downloads"><strong>Git</strong></a> or <a href="https://desktop.github.com/"><strong>GitHub Desktop</strong></a>
+* <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"><strong>AWS CLI</strong></a> * follow Appendix B for a guide
 
 Once these programs have been installed. This guide will help you set up your lab environment.
 
@@ -58,3 +58,58 @@ The terraform scripts corresponding to each lab section are pulled into main.tf 
 ## Contact
 
 For issues, contact bwagrez@westmonroe.com
+
+
+## Appendix A: Installing Terraform
+
+To install Terraform on a Windows system, download the appropriate package from the Terraform web site.
+
+<ol>
+    <li>Go to https://www.terraform.io/downloads.html.</li>
+    <li>Download the applicable package to your local system.</li>
+    <li>Extract the package to the folder C:\Program Files (x86).</li>
+   This path is used as an example. However, you can also put the Terraform executable to any other location in your local system.
+    <li>Update the path environment variable to include the folder where your Terraform executable is located.
+        <ol type-"a">
+            <li>Go to the Control Panel.</li>
+            <li>Click System.</li>
+            <li>On a Windows 10 system, click Advanced system settings. This option might vary in different versions of Windows.
+                The Advanced tab of the System Properties window is displayed.</li>
+            <li>Click Environment Variables near the bottom of the window.
+                The Environment Variables window is displayed.</li>
+            <li>In the System variables pane, click Path and then click Edit.</li>
+            <li>Click New. Add the path to the folder where your Terraform executable is located.
+                (e.g., C:\Terraform\terraform.exe)</li>
+            <li>Click OK to save your changes and then click OK to exit the Environment Variables windows. Then click OK again to exit the System Properties window.</li>
+        </ol>
+    </li>
+    <li>To verify your installation and check the version, launch Windows PowerShell and enter: terraform -version.
+    You’ll see the Terraform version displayed in the output. For example: Terraform v0.11.8</li>
+<ol>
+
+## Appendix B: Installing AWS CLI
+
+To install Terraform on a Windows system, download the appropriate package from the Terraform web site.
+
+<ol>
+    <li>Go to https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html.</li>
+    <li>Download the applicable package to your local system.</li>
+    <li>Extract the package to the folder C:\Program Files.</li>
+   This path is used as an example. However, you can also put the AWS CLI content to any other location in your local system. 
+    <li>Update the path environment variable to include the folder where your AWS CLI folder is located.
+        <ol type-"a">
+            <li>Go to the Control Panel.</li>
+            <li>Click System.</li>
+            <li>On a Windows 10 system, click Advanced system settings. This option might vary in different versions of Windows.
+                The Advanced tab of the System Properties window is displayed.</li>
+            <li>Click Environment Variables near the bottom of the window.
+                The Environment Variables window is displayed.</li>
+            <li>In the System variables pane, click Path and then click Edit.</li>
+            <li>Click New. Add the path to the folder where your AWS CLI folder is located.
+                (e.g., C:\Program Files\Amazon\AWSCLIV2\)</li>
+            <li>Click OK to save your changes and then click OK to exit the Environment Variables windows. Then click OK again to exit the System Properties window.</li>
+        </ol>
+    </li>
+    <li>To verify your installation and check the version, launch Windows PowerShell and enter: aws --version.
+    You’ll see the AWS version displayed in the output. For example: aws-cli/2.6.1</li>
+<ol>
