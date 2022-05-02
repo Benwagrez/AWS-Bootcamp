@@ -2,8 +2,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Benwagrez/AWS-200-Bootcamp/blob/main/Bootcamp%20Setup/images/wmlogo.jfif">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Benwagrez/AWS-200-Bootcamp/">
+    <img src="images/wmlogo.jfif" alt="Logo" width="200" height="80">
   </a>
 </div>
 <h1> AWS 200 Bootcamp </h1>
@@ -85,7 +85,7 @@ To install Terraform on a Windows system, download the appropriate package from 
     </li>
     <li>To verify your installation and check the version, launch Windows PowerShell and enter: terraform -version.
     You’ll see the Terraform version displayed in the output. For example: Terraform v0.11.8</li>
-<ol>
+</ol>
 
 ## Appendix B: Installing AWS CLI
 
@@ -112,4 +112,4 @@ To install Terraform on a Windows system, download the appropriate package from 
     </li>
     <li>To verify your installation and check the version, launch Windows PowerShell and enter: aws --version.
     You’ll see the AWS version displayed in the output. For example: aws-cli/2.6.1</li>
-<ol>
+</ol>
