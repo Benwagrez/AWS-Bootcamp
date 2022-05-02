@@ -1,9 +1,9 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<div align="left">
   <a href="https://github.com/Benwagrez/AWS-200-Bootcamp/">
-    <img src="Setup/images/wmlogo.jfif" alt="Logo" width="200" height="80">
+    <img src="Setup/images/wmlogo.png" alt="Logo" width="540" height="100">
   </a>
 </div>
 <h1> AWS 200 Bootcamp </h1>
@@ -21,7 +21,13 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Contact</a>
+      <a href="#contact-me">Contact Me</a>
+    </li>
+    <li>
+      <a href="#appendix-a:-installing-terraform">Appendix A: Installing Terraform</a>
+    </li>
+    <li>
+      <a href="#appendix-b:-installing-aws-cli">Appendix B: Installing AWS CLI</a>
     </li>
   </ol>
 </details>
@@ -51,11 +57,13 @@ Once these programs have been installed. This guide will help you set up your la
 
 ### How to Lab
 
-Now that your lab environment is set up, let's talk about how this lab is designed to be executed. This lab is designed to be cloned and ready to execute. The folders listed above include the scripts and templates necessary for that section (e.g., networking lab corresponse with the networking portion of the bootcamp). For the code simplicity, we have kept main.tf and variables.tf in the parent directory. This means that terraform executions have to be performed at this level. 
+Now that your lab environment is set up, let's talk about how this lab is designed to be executed. This lab is designed to be cloned and ready to execute. The folders listed above include the scripts and templates necessary for that section (e.g., networking lab corresponse with the networking portion of the bootcamp). For the code simplicity, we have kept main.tf and variables.tf in the parent directory. This means that terraform executions have to be performed at this level.
 
 The terraform scripts corresponding to each lab section are pulled into main.tf through Terraform modules. These modules are referenced to pull from pre-made templates online to be downloaded by the Terraform environment, or reference a local address to pull terraform code. In this case, the module is referencing the terrform code in the child directories. During this lab you will only have to include one module at a time, referencing only one of the lab folders. 
 
-## Contact
+Ready for your first lab? Click on the Networking folder and follow their ReadMe for a starting guide!
+
+## Contact Me
 
 For issues, contact bwagrez@westmonroe.com
 
