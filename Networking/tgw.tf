@@ -6,8 +6,6 @@ resource "aws_ec2_transit_gateway" "tgw1" {
     Key = "DoNotChangeThis"
   }
 }
-
-
 # TGW Route Table
 resource "aws_ec2_transit_gateway_route" "tgw_default_route" {
   destination_cidr_block         = "0.0.0.0/0"

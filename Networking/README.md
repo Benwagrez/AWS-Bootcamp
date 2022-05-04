@@ -27,14 +27,16 @@
 Welcome to the Networking lab. 
 
 ### Business Case
-West Monroe needs to spin up two VPCs for reasons.
+West Monroe needs to spin up three Virtual Private Clouds (VPCs) for increased isolation and regulatory concerns. Two of those VPCs will need a VPC peering connection between them, allowing duplex traffic flow. In addition, they would like a Tansit Gateway (TGW) to serve as a central hub for the VPCs.
 
 ### Object Creation Overview
 
 In this lab we will create the following:
-* VPC, VPC peering, AWS Transit Gateway
+* 3 x VPC objects
+* 1 x VPC peering connection
+* 1 x AWS Transit Gateway object
+* 3 x AWS Transit Gateway connections
 * One VPC will be created (in code), they will have to fill in for another VPC and for the AWS transit gateway
-* Possibly explore VPC peering as an alternative
 
 A diagram is included below for convenience:
 maybe I'll make a diagram, maybe not

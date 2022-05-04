@@ -24,10 +24,10 @@
       <a href="#contact-me">Contact Me</a>
     </li>
     <li>
-      <a href="#appendix-a:-installing-terraform">Appendix A: Installing Terraform</a>
+      <a href="#appendix-a-installing-terraform">Appendix A: Installing Terraform</a>
     </li>
     <li>
-      <a href="#appendix-b:-installing-aws-cli">Appendix B: Installing AWS CLI</a>
+      <a href="#appendix-b-installing-aws-cli">Appendix B: Installing AWS CLI</a>
     </li>
   </ol>
 </details>
