@@ -3,8 +3,6 @@ resource "aws_vpc" "vpc2" {
   instance_tenancy = "default"
   tags = {
     Name = "vpc2"
-    Owner = "YourName/CLI"
-    Key = "DoNotChangeThis"
   }
 }
 resource "aws_subnet" "vpc2_subnet1" {
@@ -14,8 +12,6 @@ resource "aws_subnet" "vpc2_subnet1" {
   availability_zone       = "${var.region}a"
   tags = {
     Name = "vpc2_subnet1"
-    Owner = "YourName/CLI"
-    Key = "DoNotChangeThis"
   }
 }
 

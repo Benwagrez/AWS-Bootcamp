@@ -2,8 +2,6 @@ resource "aws_ec2_transit_gateway" "tgw1" {
   description = "demo_tgw"
   tags = {
     Name = "tgw1"
-    Owner = "YourName/CLI"
-    Key = "DoNotChangeThis"
   }
 }
 # TGW Route Table

@@ -1,9 +1,7 @@
 resource "aws_vpc" "edge_vpc3" {
   cidr_block = "10.3.0.0/16"
   tags = {
-    Name = "edge vpc3"
-    Owner = "YourName/CLI"
-    Key = "DoNotChangeThis"
+    Name = "edge_vpc3"
   }
 }
 
@@ -20,8 +18,6 @@ resource "aws_subnet" "edge_vpc3_external_subnet1" {
   availability_zone       = "${var.region}a"
   tags = {
     Name = "edge_vpc3_external_subnet1"
-    Owner = "YourName/CLI"
-    Key = "DoNotChangeThis"
   }
 }
 
@@ -33,8 +29,6 @@ resource "aws_subnet" "edge_vpc3_internal_subnet1" {
   availability_zone       = "${var.region}a"
   tags = {
     Name = "edge_vpc3_internal_subnet1"
-    Owner = "YourName/CLI"
-    Key = "DoNotChangeThis"
   }
 }
 
@@ -55,8 +49,6 @@ resource "aws_route_table" "edge_vpc3_pub_rtable" {
   }
   tags = {
     Name = "edge_vpc3_pub_rtable"
-    Owner = "YourName/CLI"
-    Key = "DoNotChangeThis"
   }
 }
 
@@ -70,8 +62,6 @@ resource "aws_route_table" "edge_vpc3_internal_rtable" {
   vpc_id = aws_vpc.edge_vpc3.id
   tags = {
     Name = "edge_vpc3_internal_rtable"
-    Owner = "YourName/CLI"
-    Key = "DoNotChangeThis"
   }
 }
 

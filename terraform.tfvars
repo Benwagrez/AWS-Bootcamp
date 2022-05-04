@@ -1,5 +1,5 @@
-resource_tags = {
+default_tags = {
   project     = "CLI",
-  environment = "test",
-  owner       = "YourName/AA" # Include your department i.e BenWagrez/ET (ET for Enterprise Tech)
+  env = "dev",
+  owner       = "Wagrez/ET" # Include your department i.e BenWagrez/ET (ET for Enterprise Tech)
 }

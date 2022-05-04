@@ -2,6 +2,12 @@ variable "region" {
   default = "us-west-2"
 }
 
-variable "resource_tags" {
-
+variable "default_tags" {
+  type = map(string)
+  default = { 
+    project     = "test",
+    env = "test",
+    owner       = "YourLastName/AA"
+    Key = "DoNotChangeThis"
+  } 
 }

@@ -4,8 +4,6 @@ resource "aws_vpc" "vpc1" {
   instance_tenancy = "default"
   tags = {
     Name = "vpc1"
-    Owner = "YourName/CLI"
-    Key = "DoNotChangeThis"
   }
 }
 
@@ -16,8 +14,6 @@ resource "aws_subnet" "vpc1_subnet1" {
   availability_zone       = "${var.region}a"
   tags = {
     Name = "vpc1_subnet1"
-    Owner = "YourName/CLI"
-    Key = "DoNotChangeThis"
   }
 }
 
@@ -31,8 +27,6 @@ resource "aws_route_table" "vpc1_rtable" {
   vpc_id = aws_vpc.vpc1.id
   tags = {
     Name = "vpc1_rtable"
-    Owner = "YourName/CLI"
-    Key = "DoNotChangeThis"
   }
 }
 
