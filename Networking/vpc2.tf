@@ -5,6 +5,7 @@ resource "aws_vpc" "vpc2" {
     Name = "vpc2"
   }
 }
+
 resource "aws_subnet" "vpc2_subnet1" {
   vpc_id                  = aws_vpc.vpc2.id
   cidr_block              = "10.2.2.0/24"

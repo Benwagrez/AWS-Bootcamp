@@ -61,6 +61,65 @@ Now that your lab environment is set up, let's talk about how this lab is design
 
 The terraform scripts corresponding to each lab section are pulled into main.tf through Terraform modules. These modules are referenced to pull from pre-made templates online to be downloaded by the Terraform environment, or reference a local address to pull terraform code. In this case, the module is referencing the terrform code in the child directories. During this lab you will only have to include one module at a time, referencing only one of the lab folders. 
 
+Follow the guide below to clone this github repository to your computer, initialize AWS CLI & Terraform.
+<ol>
+  <li>Clone the Github repository to your computer
+    <ol type="a">
+      <li>
+        Github Desktop:
+        <ol type ="i">
+          <li>
+            Navigate File > Clone repository
+          </li>
+          <li>
+            Repo URL: Benwagrez/AWS-200-Bootcamp
+          </li>
+          <li>
+            Local Path: C:\Users\YourUserName\
+          </li>
+        </ol>
+      </li>
+      <li>
+        Git CLI:
+        <ol type ="i">
+          <li>
+            Navigate via CMD to C:\Users\YourUserName\
+          </li>
+          <li>
+            Enter the command: ```sh gh repo clone Benwagrez/AWS-200-Bootcamp ```
+          </li>
+        </ol>
+      </li>
+    </ol>
+    </li>
+  <li>Login to the AWS environment using AWS CLI
+    <ol type="a">
+      <li>
+        Navigate in terminal to C:\Users\YourUserName\AWS-200-Bootcamp\
+      </li>
+      <li>
+        Enter the command: ```sh aws configure ```
+      </li>
+      <li>
+        Enter the Access key ID and Secret Access Key as given by the course provider.
+      </li>
+      <li>
+        Set the default region name to us-west-2, use the default values for the rest
+      </li>
+    </ol>
+  </li>
+  <li>Initialize the Terraform environment
+    <ol type="a">
+      <li>
+        Navigate in terminal to C:\Users\YourUserName\AWS-200-Bootcamp\
+      </li>
+      <li>
+        Enter the command: ```sh terraform init ```
+      </li>
+    </ol>
+  </li>
+</ol>
+
 Ready for your first lab? Click on the Networking folder and follow their ReadMe for a starting guide!
 
 ## Contact Me

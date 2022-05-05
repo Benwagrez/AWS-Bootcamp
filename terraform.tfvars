@@ -1,5 +1,5 @@
 default_tags = {
   project     = "CLI",
-  env = "dev",
+  env         = "dev",
   owner       = "Wagrez/ET" # Include your department i.e BenWagrez/ET (ET for Enterprise Tech)
 }

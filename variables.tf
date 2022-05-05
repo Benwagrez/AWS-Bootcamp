@@ -6,8 +6,8 @@ variable "default_tags" {
   type = map(string)
   default = { 
     project     = "test",
-    env = "test",
+    env         = "test",
     owner       = "YourLastName/AA"
-    Key = "DoNotChangeThis"
+    Key         = "DoNotChangeThis"
   } 
 }
