@@ -40,7 +40,7 @@ In this lab we will create the following:
 
 A diagram is included below for convenience:
 <div align="center">
-<img src="../Setup/images/NetLabDiagram.jpg" alt="Logo">
+<img src="../Setup/images/NetLabDiagram.jpg" alt="Logo" width="600" height="400">
 </div>
 
 ### Guide
