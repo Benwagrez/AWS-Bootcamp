@@ -36,10 +36,12 @@ In this lab we will create the following:
 * 1 x VPC peering connection
 * 1 x AWS Transit Gateway object
 * 3 x AWS Transit Gateway connections
-* One VPC will be created (in code), they will have to fill in for another VPC and for the AWS transit gateway
+* AWS Subnets, routing tables, and routes
 
 A diagram is included below for convenience:
-maybe I'll make a diagram, maybe not
+<div align="center">
+<img src="../Setup/images/NetLabDiagram.jpg" alt="Logo">
+</div>
 
 ### Guide
 

@@ -48,9 +48,9 @@ Before taking this course the following Prerequisites are recommended:
 
 Tools needed:
 * <a href="https://code.visualstudio.com/"><strong>Visual Studio Code</strong></a>
-* <a href="https://www.terraform.io/downloads"><strong>Terraform</strong></a> * follow Appendix A for a guide
+* <a href="https://www.terraform.io/downloads"><strong>Terraform</strong></a> * follow <a href="#appendix-a-installing-terraform">Appendix A: Installing Terraform</a> for a guide
 * <a href="https://git-scm.com/downloads"><strong>Git</strong></a> or <a href="https://desktop.github.com/"><strong>GitHub Desktop</strong></a>
-* <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"><strong>AWS CLI</strong></a> * follow Appendix B for a guide
+* <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"><strong>AWS CLI</strong></a> * follow <a href="#appendix-b-installing-aws-cli">Appendix B: Installing AWS CLI</a> for a guide
 
 Once these programs have been installed. This guide will help you set up your lab environment.
 
