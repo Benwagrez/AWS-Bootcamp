@@ -86,7 +86,10 @@ Follow the guide below to clone this github repository to your computer, initial
             Navigate via CMD to C:\Users\YourUserName\
           </li>
           <li>
-            Enter the command: ```sh gh repo clone Benwagrez/AWS-200-Bootcamp ```
+            Enter the command: 
+            ```sh 
+            gh repo clone Benwagrez/AWS-200-Bootcamp
+            ```
           </li>
         </ol>
       </li>
@@ -98,7 +101,10 @@ Follow the guide below to clone this github repository to your computer, initial
         Navigate in terminal to C:\Users\YourUserName\AWS-200-Bootcamp\
       </li>
       <li>
-        Enter the command: ```sh aws configure ```
+        Enter the command: 
+        ```sh
+        aws configure
+        ```
       </li>
       <li>
         Enter the Access key ID and Secret Access Key as given by the course provider.
@@ -114,7 +120,10 @@ Follow the guide below to clone this github repository to your computer, initial
         Navigate in terminal to C:\Users\YourUserName\AWS-200-Bootcamp\
       </li>
       <li>
-        Enter the command: ```sh terraform init ```
+        Enter the command: 
+        ```sh
+        terraform init
+        ```
       </li>
     </ol>
   </li>
