@@ -27,7 +27,7 @@
 Welcome to the Networking lab. 
 
 ### Business Case
-West Monroe needs to spin up three Virtual Private Clouds (VPCs) for increased isolation and regulatory concerns. Two of those VPCs will need a VPC peering connection between them, allowing duplex traffic flow. In addition, they would like a Tansit Gateway (TGW) to serve as a central hub for the VPCs.
+West Monroe needs to spin up three Virtual Private Clouds (VPCs) for increased isolation and regulatory concerns. Two of those VPCs will need a VPC peering connection between them, allowing duplex traffic flow. In addition, they would like a Transit Gateway (TGW) to serve as a central hub for the VPCs.
 
 ### Object Creation Overview
 
@@ -45,16 +45,43 @@ A diagram is included below for convenience:
 
 ### Guide
 
-Follow this guide to complete the networking lab portion of the AWS-200-bootcamp 
+Follow this guide to complete the networking lab portion of the AWS-200-bootcamp, the guide will focus on how to create the objects through Terraform, then it will overview how to review the objects created in the console and provide a high-level explanation on how to replicate this lab through console.
 
+#### Terraform Creation
+<ol>
+  <li>
+    do things
+    <ol type="a">
+      <li>
+        things
+        <ol type ="i">
+          <li>
+            things
+          </li>
+        </ol>
+      </li>
+      <li>
+        things
+        <ol type ="i">
+          <li>
+            things
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
 
-make sure your console view is on the correct region as well
+#### AWS Console Overview
 
- Initialise the configuration
+stuff
+<!-- make sure your console view is on the correct region as well
+
+Initialise the configuration
 terraform init -input=false
 terraform fmt
 terraform validate
- Plan and deploy
+Plan and deploy
 terraform plan -input=false -var=hostname=geekbench -var=plan=5USD -out=tfplan
 terraform apply tfplan
 
@@ -68,4 +95,4 @@ terraform apply tfdestroy
 talk about IPAM addressing for VPCs
 talk about availability zones/regions
 
-Set variable values in tfvars
+Set variable values in tfvars -->

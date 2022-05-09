@@ -92,7 +92,7 @@ Follow the guide below to clone this github repository to your computer, initial
         </ol>
       </li>
     </ol>
-    </li>
+  </li>
   <li>Login to the AWS environment using AWS CLI
     <ol type="a">
       <li>
@@ -118,6 +118,16 @@ Follow the guide below to clone this github repository to your computer, initial
       <li>
         Enter the command: 
           <pre lang=sh>terraform init</pre>
+      </li>
+    </ol>
+  </li>
+  <li>Set up your visual studio code environment
+    <ol type="a">
+      <li>
+        If you haven't already, you can open the entire workspace in Visual Studio Code by navigating File > Open Folder... > C:\Users\YourUserName\AWS-200-Bootcamp\
+      </li>
+      <li>
+        You can also run a terminal session in Visual studio code via Terminal > New Terminal
       </li>
     </ol>
   </li>
