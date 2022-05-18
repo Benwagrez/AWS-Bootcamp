@@ -1,77 +1,46 @@
+# Create AWS VPC Object edge vpc3
 resource "aws_vpc" "edge_vpc3" {
-  cidr_block = "10.3.0.0/16"
-  tags = {
+  cidr_block = "10.3.0.0/16" # Setting the CIDR block for the VPC
+  tags = { # Setting tags (default tags as defined in variables gets appended to tags)
     Name = "edge_vpc3"
   }
 }
 
-# Create an IGW 
-resource "aws_internet_gateway" "edge_vpc_igw" {
-  vpc_id = aws_vpc.edge_vpc3.id
-}
-
-# Define a NAT subnet primary availability zone
-resource "aws_subnet" "edge_vpc3_external_subnet1" {
-  vpc_id                  = aws_vpc.edge_vpc3.id
-  cidr_block              = "10.3.1.0/24"
+# Create AWS subnet for edge vpc3
+# The subnet does not affect the ending infrastructure of this lab
+# Instead it sets the foundations for routing and the ability to add
+# compute to the VPCs in the future (i.e., EC2 Instances)
+resource "aws_subnet" "vpc3_subnet1" {
+  vpc_id                  = aws_vpc.edge_vpc3.id # Associating the subnet with a VPC
+  cidr_block              = "10.3.3.0/24" # Setting a subnet within the VPCs CIDR block
   map_public_ip_on_launch = false
   availability_zone       = "${var.region}a"
   tags = {
-    Name = "edge_vpc3_external_subnet1"
+    Name = "edge_vpc3_subnet1"
   }
-}
-
-# Define a NAT subnet primary availability zone
-resource "aws_subnet" "edge_vpc3_internal_subnet1" {
-  vpc_id                  = aws_vpc.edge_vpc3.id
-  cidr_block              = "10.3.3.0/24"
-  map_public_ip_on_launch = false
-  availability_zone       = "${var.region}a"
-  tags = {
-    Name = "edge_vpc3_internal_subnet1"
-  }
-}
-
-# Attach  TGW to Edge VPC
-resource "aws_ec2_transit_gateway_vpc_attachment" "tgw1_attach_edge" {
-  subnet_ids         = [ aws_subnet.edge_vpc3_internal_subnet1.id ]
-  transit_gateway_id = aws_ec2_transit_gateway.tgw1.id
-  vpc_id             = aws_vpc.edge_vpc3.id
-}
-
-# Create a Public route table
-resource "aws_route_table" "edge_vpc3_pub_rtable" {
-  vpc_id = aws_vpc.edge_vpc3.id
-  # Route to the internet
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.edge_vpc_igw.id
-  }
-  tags = {
-    Name = "edge_vpc3_pub_rtable"
-  }
-}
-
-resource "aws_route_table_association" "edge_vpc3_pub_rtable_association" {
-  subnet_id      = aws_subnet.edge_vpc3_external_subnet1.id
-  route_table_id = aws_route_table.edge_vpc3_pub_rtable.id
 }
 
 # Create Internal Route Table
 resource "aws_route_table" "edge_vpc3_internal_rtable" {
-  vpc_id = aws_vpc.edge_vpc3.id
+  vpc_id = aws_vpc.edge_vpc3.id # Associate the routing table with the edge vpc
   tags = {
     Name = "edge_vpc3_internal_rtable"
   }
 }
 
+# Create Routing Table Association
 resource "aws_route_table_association" "nat_internal_association" {
-  subnet_id      = aws_subnet.edge_vpc3_internal_subnet1.id
+  # Associate the routing table with the subnet created for edge vpc
+  subnet_id      = aws_subnet.vpc3_subnet1.id
+  # Select the routing table just created for edge vpc
   route_table_id = aws_route_table.edge_vpc3_internal_rtable.id
 }
 
 resource "aws_route" "edge_vpc_routes" {
-    route_table_id = aws_route_table.edge_vpc3_internal_rtable.id
-    destination_cidr_block = "10.0.0.0/8"
-    transit_gateway_id     = aws_ec2_transit_gateway.tgw1.id
-   }
+  # Associate the route with the routing table just created for edge vpc
+  route_table_id = aws_route_table.edge_vpc3_internal_rtable.id
+  # Set a destination IP block that includes the IPs of all over VPCs
+  destination_cidr_block = "10.0.0.0/8"
+  # Set a transit gateway as the destination next-hop
+  transit_gateway_id     = aws_ec2_transit_gateway.tgw1.id
+}

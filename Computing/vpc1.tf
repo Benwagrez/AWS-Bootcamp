@@ -17,6 +17,12 @@ resource "aws_subnet" "vpc1_subnet1" {
   }
 }
 
+resource "aws_ec2_transit_gateway_vpc_attachment" "tgw1_attach_vpc1" {
+  subnet_ids         = [ aws_subnet.vpc1_subnet1.id ]
+  transit_gateway_id = aws_ec2_transit_gateway.tgw1.id
+  vpc_id             = aws_vpc.vpc1.id
+}
+
 resource "aws_route_table" "vpc1_rtable" {
   vpc_id = aws_vpc.vpc1.id
   tags = {
