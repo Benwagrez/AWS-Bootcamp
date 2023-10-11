@@ -30,9 +30,9 @@ Welcome to the AWS 200 bootcamp lab component.
 
 ### Prerequisites
 
-Before taking this course the following Prerequisites are recommended:
-* AWS 100 
-* Terraform 100 
+Before taking this course the following experiennce levels are recommended:
+* The ability to navigate through the AWS console and create resources
+* The ability to create resources through Terraform 
 
 ### Installation
 
@@ -129,7 +129,7 @@ Ready for your first lab? Click on the Networking folder and follow their ReadMe
 
 ## Contact Me
 
-For issues, contact bwagrez@westmonroe.com
+For issues, contact benwagrez@gmail.com
 
 
 ## Appendix A: Installing Terraform
@@ -142,7 +142,7 @@ To install Terraform on a Windows system, download the appropriate package from 
     <li>Extract the package to the folder C:\Program Files (x86).</li>
    This path is used as an example. However, you can also put the Terraform executable to any other location in your local system.
     <li>Update the path environment variable to include the folder where your Terraform executable is located.
-        <ol type-"a">
+        <ol type="a">
             <li>Go to the Control Panel.</li>
             <li>Click System.</li>
             <li>On a Windows 10 system, click Advanced system settings. This option might vary in different versions of Windows.
@@ -169,7 +169,7 @@ To install Terraform on a Windows system, download the appropriate package from 
     <li>Extract the package to the folder C:\Program Files.</li>
    This path is used as an example. However, you can also put the AWS CLI content to any other location in your local system. 
     <li>Update the path environment variable to include the folder where your AWS CLI folder is located.
-        <ol type-"a">
+        <ol type="a">
             <li>Go to the Control Panel.</li>
             <li>Click System.</li>
             <li>On a Windows 10 system, click Advanced system settings. This option might vary in different versions of Windows.
