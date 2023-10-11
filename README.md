@@ -1,11 +1,3 @@
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="left">
-  <a href="https://github.com/Benwagrez/AWS-200-Bootcamp/">
-    <img src="Setup/images/wmlogo.png" alt="Logo" width="540" height="100">
-  </a>
-</div>
 <h1> AWS 200 Bootcamp </h1>
 
 <!-- TABLE OF CONTENTS -->
