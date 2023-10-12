@@ -1,4 +1,4 @@
-<h1> AWS 200 Bootcamp </h1>
+<h1> AWS Bootcamp </h1>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -26,7 +26,7 @@
 
 ## Getting Started
 
-Welcome to the AWS 200 bootcamp lab component. 
+Welcome to an AWS bootcamp lab set. This was created as a way to onboard new employees interested in AWS at my previous company. Now I am sharing it as a way for those interested in AWS to work through a minor bootcamp. Let me know if you want this to be expanded to include more labs!
 
 ### Prerequisites
 
@@ -64,7 +64,7 @@ Follow the guide below to clone this github repository to your computer, initial
             Navigate File > Clone repository
           </li>
           <li>
-            Repo URL: Benwagrez/AWS-200-Bootcamp
+            Repo URL: Benwagrez/AWS-Bootcamp
           </li>
           <li>
             Local Path: C:\Users\YourUserName\
@@ -79,7 +79,7 @@ Follow the guide below to clone this github repository to your computer, initial
           </li>
           <li>
             Enter the command: 
-            <pre lang=sh>gh repo clone Benwagrez/AWS-200-Bootcamp</pre>
+            <pre lang=sh>gh repo clone Benwagrez/AWS-Bootcamp</pre>
           </li>
         </ol>
       </li>
@@ -88,7 +88,7 @@ Follow the guide below to clone this github repository to your computer, initial
   <li>Login to the AWS environment using AWS CLI
     <ol type="a">
       <li>
-        Navigate in terminal to C:\Users\YourUserName\AWS-200-Bootcamp\
+        Navigate in terminal to C:\Users\YourUserName\AWS-Bootcamp\
       </li>
       <li>
         Enter the command: 
@@ -105,7 +105,7 @@ Follow the guide below to clone this github repository to your computer, initial
   <li>Initialize the Terraform environment
     <ol type="a">
       <li>
-        Navigate in terminal to C:\Users\YourUserName\AWS-200-Bootcamp\
+        Navigate in terminal to C:\Users\YourUserName\AWS-Bootcamp\
       </li>
       <li>
         Enter the command: 
@@ -116,7 +116,7 @@ Follow the guide below to clone this github repository to your computer, initial
   <li>Set up your visual studio code environment
     <ol type="a">
       <li>
-        If you haven't already, you can open the entire workspace in Visual Studio Code by navigating File > Open Folder... > C:\Users\YourUserName\AWS-200-Bootcamp\
+        If you haven't already, you can open the entire workspace in Visual Studio Code by navigating File > Open Folder... > C:\Users\YourUserName\AWS-Bootcamp\
       </li>
       <li>
         You can also run a terminal session in Visual studio code via Terminal > New Terminal

@@ -1,11 +1,6 @@
 <!-- PROJECT LOGO -->
 <br />
-<div align="left">
-  <a href="https://github.com/Benwagrez/AWS-200-Bootcamp/">
-    <img src="../Setup/images/wmlogo.png" alt="Logo" width="540" height="100">
-  </a>
-</div>
-<h1> AWS 200 Networking Lab </h1>
+<h1> AWS Networking Lab </h1>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -32,7 +27,7 @@
 Welcome to the Networking lab. 
 
 ### Business Case
-West Monroe needs to spin up three Virtual Private Clouds (VPCs) for increased isolation and regulatory concerns. Two of those VPCs will need a VPC peering connection between them, allowing duplex traffic flow. In addition, they would like a Transit Gateway (TGW) to serve as a central hub for the VPCs.
+A company needs to spin up three Virtual Private Clouds (VPCs) for increased isolation and regulatory concerns. Two of those VPCs will need a VPC peering connection between them, allowing duplex traffic flow. In addition, they would like a Transit Gateway (TGW) to serve as a central hub for the VPCs.
 
 ### Object Creation Overview
 
