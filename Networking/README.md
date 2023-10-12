@@ -136,7 +136,7 @@ Follow this guide to complete the networking lab portion of the AWS-200-bootcamp
         2 x VPC Objects
         <ol type ="i">
           <li>
-            The Terraform registry includes documentation for the VPC object.
+            The Terraform registry includes documentation for the <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc">VPC object</a>.
           </li>
         </ol>
       </li>
@@ -144,7 +144,7 @@ Follow this guide to complete the networking lab portion of the AWS-200-bootcamp
         1 x VPC Peering
         <ol type ="i">
           <li>
-            The Terraform registry includes documentation for the VPC Peering object.
+            The Terraform registry includes documentation for the <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_peering_connection">VPC Peering object</a>.
           </li>
         </ol>
       </li>
@@ -152,15 +152,15 @@ Follow this guide to complete the networking lab portion of the AWS-200-bootcamp
         1 x Transit Gateway
         <ol type ="i">
           <li>
-            The Terraform registry includes documentation for the Transit Gateway object.
+            The Terraform registry includes documentation for the <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_transit_gateway">Transit Gateway object</a>.
           </li>
         </ol>
       </li>
       <li>
-        3 x Transit Gateway Connection
+        3 x Transit Gateway attachment
         <ol type ="i">
           <li>
-            The Terraform registry includes documentation for the Transit Gateway Connection object.
+            The Terraform registry includes documentation for the <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_transit_gateway_vpc_attachment">Transit Gateway attachment object</a>.
           </li>
         </ol>
       </li>
@@ -168,7 +168,7 @@ Follow this guide to complete the networking lab portion of the AWS-200-bootcamp
         2 x Subnet
         <ol type ="i">
           <li>
-            The Terraform registry includes documentation for the Subnet object.
+            The Terraform registry includes documentation for the <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet">Subnet object</a>.
           </li>
         </ol>
       </li>
@@ -176,7 +176,7 @@ Follow this guide to complete the networking lab portion of the AWS-200-bootcamp
         2 x Routing Table, Routing Table Association, and Route
         <ol type ="i">
           <li>
-            The Terraform registry includes documentation for the following objects: Routing Table, Routing Table Association, and Route.
+            The Terraform registry includes documentation for the following objects: <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet">Routing Table</a>, <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table_association">Routing Table Association</a>, and <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route">Route</a>.
           </li>
         </ol>
       </li>
@@ -212,25 +212,25 @@ Follow this guide to complete the networking lab portion of the AWS-200-bootcamp
 
 #### AWS Console Overview
 
-Open up and login to the AWS console.
-<!-- make sure your console view is on the correct region as well
+In this section we're going to familiarize ourselves with the AWS console so that we can take a look at the objects we just created and verify that they were created correctly.
 
-Initialise the configuration
-terraform init -input=false
-terraform fmt
-terraform validate
-Plan and deploy
-terraform plan -input=false -var=hostname=geekbench -var=plan=5USD -out=tfplan
-terraform apply tfplan
+Open up the <a href=https://console.aws.amazon.com>AWS Console</a> and login.
 
-Terraform will run the above script to benchmark the server
-Find your results in the Terraform output
+Let's take an example bit of Terraform code I want to double validate a succesful build on.
+<pre lang=Terraform>resource "aws_subnet" "vpc1_subnet1" {
+  vpc_id                  = aws_vpc.vpc1.id
+  cidr_block              = "10.1.1.0/24"
+  map_public_ip_on_launch = false
+  availability_zone       = "${var.region}a"
+  tags = {
+    Name = "vpc1_subnet1"
+  }
+}</pre>
+Inside the AWS portal to find this resource first you have to go into the VPC service and then the subnet subservice. <i>Note: Make sure you are on the correct region, by default this lab includes a region variable defined as US-West-2.</i>
 
- Once finished, destroy the server
-terraform plan -destroy -out=tfdestroy
-terraform apply tfdestroy
 
-talk about IPAM addressing for VPCs
-talk about availability zones/regions
+Then I would take the name I have tagged the object with: <pre lang=Terraform> Name = "vpc1_subnet1"</pre> 
+And enter that name in the filter to find my subnet Do this across your resources to validate that your terraform push was successful.
 
-Set variable values in tfvars -->
+Once you've verified your push is successful and all the resources are up and error free, then <b>congratulations you have finished the networking module of AWS 200!</b>
+
